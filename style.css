@@ -1,11 +1,104 @@
-html {
-  background-color: #013220;
+main, html {
+  background-color: #1b2a33;
   font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   color: white;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
-.title {
-  font-size: 50px;
-  text-align: center;
-  font-weight: bold;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #212121;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 2vw;
+  opacity: 0.8;
 }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1vw;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.sidenav a:hover {
+  color: white;
+  font-size: 1.1vw;
+  text-decoration: none;
+}
+
+.sidenav a:onclick {
+  text-decoration: none;
+  color: #818181;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1vw;
+  font-size: 1vw;
+  margin-left: 2vw;
+}
+
+.top-of-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.my-name {
+  font-size: 2vw;
+  padding-left: 1vw;
+  padding-top: 1vw;
+  vertical-align: middle;
+}
+
+.nav-lines {
+  padding-right: 1vw;
+  padding-top: 1vw;
+  font-size: 1.5vw;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#open-lines {
+  transition: margin-right 0.5s;
+  padding: 16px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.construction {
+  width: 50%;
+  height: 50%;
+}
+
+.message-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  width: 50%;
+  height: 50%;
+  font-size: 1vw;
+}
+
+/*#013220 -- #0a0c0e*/
